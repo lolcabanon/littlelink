@@ -237,7 +237,7 @@ hr {
   font-size: 0.8em;
   opacity: 0.7;
   width: min-content;
-  min-width: 50ch;
+  min-width: min(90vw, 50ch);
   margin-inline: auto;
 }
 
