@@ -37,10 +37,10 @@
   max-width: 600px;
   text-align: center;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.5em;
   box-sizing: border-box;
 }
-.container-left {
+/* .container-left {
   position: relative;
   width: 100%;
   max-width: 600px;
@@ -48,25 +48,23 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-}
-.column {
-  position: center;
+} */
+/* .column {
   width: 100%;
-  float: center;
   box-sizing: border-box;
-}
+} */
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-  .container {
+  /* .container {
     width: 85%;
     padding: 0;
-  }
+  } */
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
+  /* .container {
     width: 80%;
   }
   .column,
@@ -76,7 +74,7 @@
   .column:first-child,
   .columns:first-child {
     margin-left: 0;
-  }
+  } */
 }
 
 /* Base Styles
@@ -86,12 +84,12 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 
 html {
-  font-size: 100%;
+  /* font-size: 100%; */
   color-scheme: light dark;
 }
 body {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: clamp(1vw, 1em, 4vw);
+  line-height: 1.5;
   font-weight: 400;
   font-family: 'Poppins', 'Open Sans', 'HelveticaNeue', 'Helvetica Neue',
     Helvetica, Arial, sans-serif;
@@ -101,21 +99,19 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1 {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 1em;
   font-weight: 800;
-}
-h1 {
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 64px;
   letter-spacing: 0;
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 {
+  /* h1 {
     font-size: 48px;
     line-height: 96px;
-  }
+  } */
 }
 
 p {
@@ -192,7 +188,7 @@ h2 {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
+/* .u-full-width {
   width: 100%;
   box-sizing: border-box;
 }
@@ -205,13 +201,13 @@ h2 {
 }
 .u-pull-left {
   float: left;
-}
+} */
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 2.5rem;
-  margin-bottom: 3rem;
+  margin-top: 2.5em;
+  margin-bottom: 3em;
   border-width: 0;
   border-top: 1px solid #e1e1e1;
 }
@@ -230,7 +226,9 @@ hr {
 
 .avatar {
   width: auto;
-  height: 20vh;
+  /* min-height: 20vh; */
+  height: clamp(2em, 80vw, 20vh);
+  max-width: 100%;
 }
 
 .note {
