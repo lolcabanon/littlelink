@@ -48,14 +48,14 @@ button {
   outline: none;
   border-radius: 0.5em;
   cursor: pointer;
-  transition: border-radius 500ms ease;
+  /* transition: border-radius 750ms ease; */
 }
-button:hover,
+.button:hover,
 .button:focus {
   color: #212121;
   border-color: #888;
-  outline: #7ab8ff solid 3px;
-  border-radius: 2em;
+  /* outline: #7ab8ff solid 3px; */
+  /* border-radius: 2em; */
 }
 .button.button-primary {
   color: #fff;
@@ -102,7 +102,9 @@ button:hover,
   top: 50%;
   transform: translateY(-50%);
 }
-
+.icon-invert {
+  filter: invert(1);
+}
 .icon-2x {
   transform: translateY(-50%) scale(2);
 }
@@ -125,7 +127,7 @@ button:hover,
   color: #f9b950;
   background-color: #fff;
   border: 2px solid lightgray;
-  margin-block: 1.5em;
+  /* margin-block: 1.5em; */
   transition: transform 500ms ease;
 }
 .button.button-lfv:hover,

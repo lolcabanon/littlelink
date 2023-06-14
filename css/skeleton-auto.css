@@ -166,26 +166,21 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 input,
 textarea,
 select,
-fieldset {
-  margin-bottom: 1.5rem;
-}
+fieldset,
 pre,
 blockquote,
 dl,
 figure,
 p,
-ol {
-  margin-bottom: 1.5rem;
-}
+ol,
 h2 {
   margin-bottom: 1.5em;
 }
-
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* .u-full-width {
@@ -232,11 +227,18 @@ hr {
 }
 
 .note {
-  font-size: 0.8em;
+  font-size: 0.7em;
   opacity: 0.7;
   width: min-content;
   min-width: min(90vw, 50ch);
   margin-inline: auto;
+}
+/* .note-over {
+  margin-bottom: -1em;
+} */
+.note-under {
+  margin-top: -1em;
+  margin-bottom: 2rem;
 }
 
 mark {
